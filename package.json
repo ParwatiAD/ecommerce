@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "vite-react-typescript-starter",
   "private": true,
   "version": "0.0.0",
@@ -33,4 +34,27 @@
     "typescript-eslint": "^8.3.0",
     "vite": "^5.4.2"
   }
+=======
+  "name": "express-mongodb-crud",
+  "version": "1.0.0",
+  "description": "CRUD operations with Node.js, Express, and MongoDB",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.21.2",
+    "mongoose": "^7.6.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+>>>>>>> 1bc24bb (initial commit)
 }
