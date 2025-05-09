@@ -17,7 +17,11 @@ mongoose.connect(MONGODB_URI)
 
 // Routes
 const itemRoutes = require('./routes/items');
+const cartRoutes = require('./routes/cart'); // Add this line to import cart routes
+
 app.use('/api/items', itemRoutes);
+app.use('/api/cart', cartRoutes); // Add this line to use cart routes
+
 
 // Error handling middleware
 app.use((err, req, res, next) => {
