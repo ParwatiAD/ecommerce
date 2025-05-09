@@ -11,7 +11,11 @@ const app = express();
 // MongoDB Atlas Connection
 const MONGODB_URI =  'mongodb+srv://parwatiad25:product@product-catalog.q2ja5mm.mongodb.net/?retryWrites=true&w=majority&appName=product-catalog';
 
-mongoose.connect(MONGODB_URI)
+mongoose.connect(MONGODB_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  serverSelectionTimeoutMS: 30000, // 30 seconds timeout
+})
   .then(() => console.log('Connected to MongoDB Atlas'))
   .catch(err => console.error('MongoDB Atlas connection error:', err));
 
